@@ -1,0 +1,43 @@
+{
+  "name": "gutic",
+  "productName": "GUTIC",
+  "version": "1.2.0",
+  "description": "Gestion de Mantenimiento de Redes y Comunicaciones Unificadas - Policia Nacional de Colombia",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "compilar": "node fuente/compilar.js",
+    "dev": "npm run compilar && electron .",
+    "dist": "npm run compilar && electron-builder --win portable"
+  },
+  "build": {
+    "appId": "co.gov.policia.gutic",
+    "productName": "GUTIC",
+    "files": [
+      "electron/**/*",
+      "GUTIC.html",
+      "!electron/build/**"
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "electron/build/icono.ico"
+    },
+    "portable": {
+      "artifactName": "GUTIC-Portatil.exe"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^8.0.1",
+    "@babel/preset-react": "^8.0.1",
+    "docx": "^9.7.1",
+    "electron": "^44.1.1",
+    "electron-builder": "^26.15.3"
+  }
+}
