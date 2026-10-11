@@ -1,6 +1,6 @@
 /* ---------------------------- pantalla de inicio -------------------------- */
-const UNIDADES = ["Tecnologías DINCO", "Dirección de Incorporación", "Redes y Comunicaciones",
-  "Mesa de Ayuda", "Seguridad de la Información", "Jefatura"];
+const UNIDADES = ["Tecnologías", "Redes y Comunicaciones",
+  "Mesa de Ayuda", "Seguridad de la Información"];
 
 function Inicio({ arrancando, soporta, hayPrevio, onCrear, onAbrir, onReconectar }) {
   const [modo, setModo] = useState(null);
@@ -23,7 +23,7 @@ function Inicio({ arrancando, soporta, hayPrevio, onCrear, onAbrir, onReconectar
           fontFamily: "'JetBrains Mono',monospace", letterSpacing: ".05em" }}>
           Gestión de mantenimiento de redes y comunicaciones unificadas
         </div>
-        <div style={{ color: "#8EA3B5", fontSize: 12, marginTop: 6 }}>Policía Nacional de Colombia</div>
+        <div style={{ color: "#8EA3B5", fontSize: 12, marginTop: 6 }}>Mantenimiento_Equipos_GUTIC</div>
       </div>
 
       {modo !== "nueva" ? (
