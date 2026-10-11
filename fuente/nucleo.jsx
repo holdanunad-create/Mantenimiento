@@ -1,6 +1,6 @@
 /* ==========================================================================
    GUTIC — Gestión de Mantenimiento de Redes y Comunicaciones Unificadas
-   Policía Nacional de Colombia
+   Mantenimiento Equipos GUTIC
    Aplicación de un solo archivo. Base de datos: Excel vinculado por el usuario.
    ========================================================================== */
 
